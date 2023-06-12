@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Calendar</title>
+</head>
+
+<body>
+
+    <main class="main">
+
+        <h1 class="page-title">
+            <div class="page-title__wrapper">
+                <span>Your Calendar</span>
+                <span class="calendar__tip">
+                    <div class="calendar__tip-icon"><img src="info-tip.svg" alt=""></div>
+                    <div class="calendar__tip-itself">It saves all your data (events) locally: it'll be available only in this browser at this exact URL</div>
+                </span>
+            </div>
+        </h1>
+
+        <section class="calendar">
+            <div class="container">
+                <div class="calendar__wrapper">
+                    <div class="calendar__block">
+                        <div class="calendar__element">
+                            <div class="calendar__title">
+                                <button class="calendar__back-to hidden">Back to today</button>
+                                <span class="calendar__month"></span> <span class="calendar__year"></span>
+                                <div class="calendar__controls">
+                                    <button class="calendar__btn calendar__btn--prev"><</button>
+                                    <button class="calendar__btn calendar__btn--next">></button>
+                                </div>
+                            </div>
+                            <div class="calendar__weekdays">
+                                <div class="calendar__weekday">Sun</div>
+                                <div class="calendar__weekday">Mon</div>
+                                <div class="calendar__weekday">Tue</div>
+                                <div class="calendar__weekday">Wed</div>
+                                <div class="calendar__weekday">Thu</div>
+                                <div class="calendar__weekday">Fri</div>
+                                <div class="calendar__weekday">Sat</div>
+                            </div>
+                            <div class="calendar__days">
+                            </div>
+                        </div>
+                        
+                        <div class="calendar__events">
+                            <form action="#" class="calendar__form">
+                                <div class="calendar__form-title">Add new event for <span></span>:</div>
+                                <div class="calendar__input-box">
+                                    <input tabindex="0" type="text" class="calendar__input calendar__input--event"
+                                        placeholder="Event name">
+                                </div>
+                            </form>
+                            <div class="calendar__notification">Too short. Minimum 4 characters.</div>
+                            <div class="calendar__events-text">
+                                <div class="calendar__event-title">Events in this month:</div>
+                                <ol class="calendar__event-list">
+                            </div>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+</main>
+
+
+
+<script src="model.js"></script>
+<script src="view.js"></script>
+<script src="controller.js"></script>
+</body>
+
+</html>
